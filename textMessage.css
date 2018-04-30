@@ -1,0 +1,127 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.chatbox {
+  border: 1px solid #888;
+  width: 300px;
+  height: 400px;
+  margin: 24px auto;
+  display: flex;
+  flex-direction: column;
+  background:#f2f2f2;
+}
+
+.messages {
+  list-style: none;
+  margin: 0;
+  margin-top: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chatfooter {
+  display: flex;
+  border: 1px dotted #888;
+  flex-shrink: 0;
+  background-color: white;
+}
+
+.chatinput:focus { 
+    background-color: #e6f2ff;
+}
+
+.chatinput {
+  flex: 1;
+  border: 0;
+  font: inherit;
+  padding: 6px;
+}
+
+.chatsend {
+  border: 0;
+  margin 0;
+  padding 0;
+  font: inherit;
+  padding: 6px;
+}
+
+
+.avatar {
+  height: 48px;
+  width: 48px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+}
+
+.messagebody {
+  display: inline-block;
+  max-width: 200px;
+  vertical-align: top;
+  background-color: yellow;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+#sendMessage:before{
+  display: flex; 
+	content:"\f1d8";
+	font-family:fontawesome;
+	padding:6px;
+	cursor:pointer;
+  color: black;
+}
+
+#clearAll:before{
+  display: flex;
+	content:"\f1f8";
+	font-family:fontawesome;
+	padding:6px;
+	cursor:pointer;
+	color:green;
+  background: transparent;
+}
+
+button, input {
+	border:0;
+	margin:0;
+	padding:0;
+	background:none;
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+
+.messagebody p {
+  margin: 0;
+}
+
+.messagebody time {
+  float: right;
+  font-size: 70%;
+}
+
+.mymessage {
+  text-align: right;
+}
+
+.mymessage .messagebody {
+  background-color: #ccc;
+.messages > li {
+  margin-top: 12px;
+}
+
+  .mymessage p {
+    cursor: pointer;
+  }
